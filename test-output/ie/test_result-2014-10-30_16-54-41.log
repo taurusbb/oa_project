@@ -1,0 +1,35 @@
+test_add_emp (add_emp.add_emp) ... ERROR
+test_add_flow (add_flow.add_flow) ... ok
+test_add_chuanyue (chuanyue.add_chuanyue) ... ok
+test_add_fawen (fawen.add_fawen) ... ok
+test_add_shouwen (shouwen.add_shouwen) ... ERROR
+
+======================================================================
+ERROR: test_add_emp (add_emp.add_emp)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test-cases/ie/add_emp.py", line 70, in test_add_emp
+    dr.find_element_by_id("ctl00_cntQuery_SeachSel1_IoFieldQuery1_txtSimple").send_keys(name)
+  File "D:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 206, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "D:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 662, in find_element
+    {'using': by, 'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 173, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python27\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 165, in check_response
+    raise exception_class(message, screen, stacktrace, value['alert'].get('text'))
+UnexpectedAlertPresentException: Alert Text: \u4fdd\u5b58\u8fc7\u7a0b\u51fa\u73b0\u9519\u8bef\uff0c\u6709\u53ef\u80fd\u662f\u6240\u8f93\u5165\u7684[\u767b\u5f55\u5e10\u53f7]\u5df2\u7ecf\u5b58\u5728\uff01
+<super: <class 'WebDriverException'>, <UnexpectedAlertPresentException object>>
+
+======================================================================
+ERROR: test_add_shouwen (shouwen.add_shouwen)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test-cases/ie/shouwen.py", line 141, in test_add_shouwen
+    base.choose_emp(u"-流程申请人-")
+TypeError: choose_emp() takes exactly 2 arguments (1 given)
+
+----------------------------------------------------------------------
+Ran 5 tests in 499.571s
+
+FAILED (errors=2)

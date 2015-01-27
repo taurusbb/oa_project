@@ -1,0 +1,42 @@
+summary:
+ - 'Normal Summary'
+ - '1234567890-123.3e23'
+ - '~!#$%^&*()_+|}{":?><`-=[];/.,'
+ - '<p><hr><h1>aa</h1><a ref="a"'
+priority:
+ - 'Blocker'
+ - 'Major'
+duedate:
+ - '11/Jun/13'
+ - '' #not specified
+components:
+ - 'Component1'
+ - 'Component2'
+affected_versions:
+ - 'Version1.0'
+ - 'Version2.0'
+fix_versions:
+ - 'Version1.0'
+ - 'Version2.0'
+assignee:
+ - 'dev1'
+ - 'dev2'
+reporter:
+ - 'T1'
+ - 'T2'
+environment:
+ - 'environment text -environment- !environment!' # as a demo I'm not going to list all possible inputs here. otherwise test will be huge and takes days to run
+env_preview:
+ - 'True'
+ - 'False'
+description:
+ - 'description text bq. block quote'
+desc_preview:
+ - 'True'
+ - 'False'
+orig_estimate:
+ - '1w'
+remaining_estimate:
+ - '2d 3h'
+labels:
+- 'a_label'

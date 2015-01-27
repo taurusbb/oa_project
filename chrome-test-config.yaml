@@ -1,0 +1,16 @@
+# this is the configuration file for the test suite.
+# be very careful to modify it.
+
+---
+test_name: JIRA-Function-Test
+test_desc: A demo function test for JIRA
+test_cases_path: test-cases/chrome/
+test_input_path: test-input/
+test_output_path: test-output/chrome/
+
+base_url: ttp://localhost:8080/
+implicit_wait: 30 # implicit wait time in seconds
+time_out: 120 # time out time in seconds. default in selenium is 60, changing to 120 here.
+
+username: admin
+password: 123456

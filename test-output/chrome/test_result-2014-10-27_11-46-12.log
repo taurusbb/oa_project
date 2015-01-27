@@ -1,0 +1,47 @@
+test_create_issue (create-issue.CreateIssue) ... ERROR
+test_search_issue (search-issue.SearchIssue) ... ERROR
+test_update_issue (update-issue.UpdateIssue) ... ERROR
+
+======================================================================
+ERROR: test_create_issue (create-issue.CreateIssue)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test-cases/chrome/create-issue.py", line 26, in setUp
+    self.driver = webdriver.Chrome()
+  File "D:\Python27\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 59, in __init__
+    self.service.start()
+  File "D:\Python27\lib\site-packages\selenium\webdriver\chrome\service.py", line 66, in start
+    "ChromeDriver executable needs to be available in the path. "
+WebDriverException: Message: ChromeDriver executable needs to be available in the path. Please download from http://chromedriver.storage.googleapis.com/index.html and read up at http://code.google.com/p/selenium/wiki/ChromeDriver
+
+
+======================================================================
+ERROR: test_search_issue (search-issue.SearchIssue)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test-cases/chrome/search-issue.py", line 25, in setUp
+    self.driver = webdriver.Chrome()
+  File "D:\Python27\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 59, in __init__
+    self.service.start()
+  File "D:\Python27\lib\site-packages\selenium\webdriver\chrome\service.py", line 66, in start
+    "ChromeDriver executable needs to be available in the path. "
+WebDriverException: Message: ChromeDriver executable needs to be available in the path. Please download from http://chromedriver.storage.googleapis.com/index.html and read up at http://code.google.com/p/selenium/wiki/ChromeDriver
+
+
+======================================================================
+ERROR: test_update_issue (update-issue.UpdateIssue)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test-cases/chrome/update-issue.py", line 26, in setUp
+    self.driver = webdriver.Chrome()
+  File "D:\Python27\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 59, in __init__
+    self.service.start()
+  File "D:\Python27\lib\site-packages\selenium\webdriver\chrome\service.py", line 66, in start
+    "ChromeDriver executable needs to be available in the path. "
+WebDriverException: Message: ChromeDriver executable needs to be available in the path. Please download from http://chromedriver.storage.googleapis.com/index.html and read up at http://code.google.com/p/selenium/wiki/ChromeDriver
+
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.006s
+
+FAILED (errors=3)

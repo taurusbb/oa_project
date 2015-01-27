@@ -1,0 +1,82 @@
+test_create_issue (create-issue.CreateIssue) ... FAIL
+ERROR
+test_search_issue (search-issue.SearchIssue) ... FAIL
+test_update_issue (update-issue.UpdateIssue) ... FAIL
+ERROR
+
+======================================================================
+ERROR: test_create_issue (create-issue.CreateIssue)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test-cases/firefox/create-issue.py", line 188, in tearDown
+    self.driver.quit()
+  File "D:\Python27\lib\site-packages\selenium\webdriver\firefox\webdriver.py", line 67, in quit
+    RemoteWebDriver.quit(self)
+  File "D:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 455, in quit
+    self.execute(Command.QUIT)
+  File "D:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 171, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "D:\Python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 349, in execute
+    return self._request(command_info[0], url, body=data)
+  File "D:\Python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 379, in _request
+    self._conn.request(method, parsed_url.path, body, headers)
+  File "D:\Python27\lib\httplib.py", line 995, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Python27\lib\httplib.py", line 1023, in _send_request
+    self.putrequest(method, url, **skips)
+  File "D:\Python27\lib\httplib.py", line 886, in putrequest
+    raise CannotSendRequest()
+CannotSendRequest
+
+======================================================================
+ERROR: test_update_issue (update-issue.UpdateIssue)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test-cases/firefox/update-issue.py", line 171, in tearDown
+    self.driver.quit()
+  File "D:\Python27\lib\site-packages\selenium\webdriver\firefox\webdriver.py", line 67, in quit
+    RemoteWebDriver.quit(self)
+  File "D:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 455, in quit
+    self.execute(Command.QUIT)
+  File "D:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 171, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "D:\Python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 349, in execute
+    return self._request(command_info[0], url, body=data)
+  File "D:\Python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 379, in _request
+    self._conn.request(method, parsed_url.path, body, headers)
+  File "D:\Python27\lib\httplib.py", line 995, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Python27\lib\httplib.py", line 1023, in _send_request
+    self.putrequest(method, url, **skips)
+  File "D:\Python27\lib\httplib.py", line 886, in putrequest
+    raise CannotSendRequest()
+CannotSendRequest
+
+======================================================================
+FAIL: test_create_issue (create-issue.CreateIssue)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test-cases/firefox/create-issue.py", line 45, in test_create_issue
+    else: self.fail("time out")
+AssertionError: time out
+
+======================================================================
+FAIL: test_search_issue (search-issue.SearchIssue)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test-cases/firefox/search-issue.py", line 44, in test_search_issue
+    else: self.fail("time out")
+AssertionError: time out
+
+======================================================================
+FAIL: test_update_issue (update-issue.UpdateIssue)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test-cases/firefox/update-issue.py", line 45, in test_update_issue
+    else: self.fail("time out")
+AssertionError: time out
+
+----------------------------------------------------------------------
+Ran 3 tests in 1147.726s
+
+FAILED (failures=3, errors=2)

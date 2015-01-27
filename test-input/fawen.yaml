@@ -1,0 +1,10 @@
+# this is the configuration file for the test suite.
+# be very careful to modify it.
+
+---
+quick_search:
+ - ['my p0p', '[TST-18] Summary of a demo issue - pls ignore - JIRA']
+
+advanced_search:
+ - ['project = TST AND issuetype in standardIssueTypes() AND status = "In Progress" AND text ~ "p0p"', '[TST-18] Summary of a demo issue - pls ignore - JIRA']
+ - ['project = TST AND issuetype = Bug AND text ~ lpm04', '[TST-153] new issue for search test - JIRA']

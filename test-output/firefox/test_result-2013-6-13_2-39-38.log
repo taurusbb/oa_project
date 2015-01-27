@@ -1,0 +1,24 @@
+test_update_issue (update-issue.UpdateIssue) ... ERROR
+
+======================================================================
+ERROR: test_update_issue (update-issue.UpdateIssue)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test-cases/firefox/update-issue.py", line 151, in tearDown
+    self.assertEqual([], self.verificationErrors)
+AssertionError: Lists differ: [] != ["'an updated summary_updated_...
+
+Second list contains 4 additional elements.
+First extra element 0:
+'an updated summary_updated_86ab5811-c1c0-4772-9750-6da0d8f0a95c' != u'a short normal summary_new_fb126ebb-a699-469b-8e91-26ebd868b443'
+
+- []
++ ["'an updated summary_updated_86ab5811-c1c0-4772-9750-6da0d8f0a95c' != u'a short normal summary_new_fb126ebb-a699-469b-8e91-26ebd868b443'",
++  "'12/Feb/23' != u'11/Jun/13'",
++  "'716---123-=-=01!2!1238&&^%21_updated_554fd449-fd2b-4052-ac69-f7c71156ce9e' != u'a short normal summary_new_e296bc24-8823-4e51-8e02-14791f92e817'",
++  "'21/Jan/99' != u'11/Jun/13'"]
+
+----------------------------------------------------------------------
+Ran 1 test in 52.165s
+
+FAILED (errors=1)

@@ -1,0 +1,25 @@
+test_create_issue (create-issue.CreateIssue) ... ERROR
+
+======================================================================
+ERROR: test_create_issue (create-issue.CreateIssue)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test-cases/firefox/create-issue.py", line 67, in test_create_issue
+    driver.find_element_by_id("create_link").click()
+  File "D:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 206, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "D:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 662, in find_element
+    {'using': by, 'value': value})['value']
+  File "D:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 173, in execute
+    self.error_handler.check_response(response)
+  File "D:\python27\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 166, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: Unable to locate element: {"method":"id","selector":"create_link"}
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///c:/users/admini~1/appdata/local/temp/1/tmpa00p44/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+    at fxdriver.Timer.prototype.setTimeout/<.notify (file:///c:/users/admini~1/appdata/local/temp/1/tmpa00p44/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+
+----------------------------------------------------------------------
+Ran 1 test in 106.066s
+
+FAILED (errors=1)

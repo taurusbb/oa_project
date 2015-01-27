@@ -1,0 +1,38 @@
+# this is the configuration file for create-issue.py.
+# be very careful when you modify it.
+
+---
+issue_fields:
+ - input_id: 1
+   summary: 'an updated summary'
+   priority: 'Blocker'
+   duedate: '12/Feb/23'
+   components: ['Component1', 'Component2']
+   affected_versions: ['Version1.0', 'Version2.0']
+   fix_versions: ['Version1.0']
+   assignee: 'dev1'
+   reporter: 'T1'
+   environment: 'bq. environment ~aaa~'
+   env_preview: True #only True will be true, everything else will be false
+   description: 'description text bq. block quote'
+   desc_preview: False
+   orig_estimate: 1w
+   remaining_estimate: 2d 3h
+   labels: ['a_label',]
+
+ - input_id: 2
+   summary: '716---123-=-=01!2!1238&&^%21'
+   priority: 'Minor'
+   duedate: '21/Jan/99'
+   components: ['Component1', 'Component2']
+   affected_versions: ['Version2.0']
+   fix_versions: ['Version1.0']
+   assignee: 'dev2'
+   reporter: 'T2'
+   environment: '~hahahahah wake up'
+   env_preview: False
+   description: 'description text bq. block quote'
+   desc_preview: False
+   orig_estimate: 1000w
+   remaining_estimate: ''
+   labels: ['yet another label',]

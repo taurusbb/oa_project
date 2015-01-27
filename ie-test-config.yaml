@@ -1,0 +1,16 @@
+# this is the configuration file for the test suite.
+# be very careful to modify it.
+
+---
+test_name: iOffice-Function-Test
+test_cases_path: test-cases/ie/
+test_input_path: test-input/
+test_output_path: test-output/ie/
+
+base_url: http://localhost:8007/ioffice
+implicit_wait: 10 # implicit wait time in seconds
+time_out: 120 # time out time in seconds. default in selenium is 60, changing to 120 here.
+
+admin: admin
+username: test2
+password: 123456

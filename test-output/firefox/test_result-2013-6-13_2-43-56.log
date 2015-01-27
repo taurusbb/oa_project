@@ -1,0 +1,8 @@
+test_create_issue (create-issue.CreateIssue) ... ok
+test_search_issue (search-issue.SearchIssue) ... ok
+test_update_issue (update-issue.UpdateIssue) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 209.769s
+
+OK

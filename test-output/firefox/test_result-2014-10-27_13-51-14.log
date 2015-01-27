@@ -1,0 +1,64 @@
+test_create_issue (create-issue.CreateIssue) ... FAIL
+test_search_issue (search-issue.SearchIssue) ... ERROR
+test_update_issue (update-issue.UpdateIssue) ... ERROR
+
+======================================================================
+ERROR: test_search_issue (search-issue.SearchIssue)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test-cases/firefox/search-issue.py", line 26, in setUp
+    self.driver.implicitly_wait(self.cfg['implicit_wait'])
+  File "D:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 619, in implicitly_wait
+    self.execute(Command.IMPLICIT_WAIT, {'ms': float(time_to_wait) * 1000})
+  File "D:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 173, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python27\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 166, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchWindowException: Message: Window not found. The browser window may have been closed.
+Stacktrace:
+    at nsCommandProcessor.prototype.execute (file:///c:/users/admini~1/appdata/local/temp/1/tmp9aietu/extensions/fxdriver@googlecode.com/components/command-processor.js:11706:11)
+    at Dispatcher.executeAs/< (file:///c:/users/admini~1/appdata/local/temp/1/tmp9aietu/extensions/fxdriver@googlecode.com/components/driver-component.js:8437:5)
+    at Resource.prototype.handle (file:///c:/users/admini~1/appdata/local/temp/1/tmp9aietu/extensions/fxdriver@googlecode.com/components/driver-component.js:8584:194)
+    at Dispatcher.prototype.dispatch (file:///c:/users/admini~1/appdata/local/temp/1/tmp9aietu/extensions/fxdriver@googlecode.com/components/driver-component.js:8531:36)
+    at WebDriverServer/<.handle (file:///c:/users/admini~1/appdata/local/temp/1/tmp9aietu/extensions/fxdriver@googlecode.com/components/driver-component.js:11489:5)
+    at createHandlerFunc/< (file:///c:/users/admini~1/appdata/local/temp/1/tmp9aietu/extensions/fxdriver@googlecode.com/components/httpd.js:1935:41)
+    at ServerHandler.prototype.handleResponse (file:///c:/users/admini~1/appdata/local/temp/1/tmp9aietu/extensions/fxdriver@googlecode.com/components/httpd.js:2261:15)
+    at Connection.prototype.process (file:///c:/users/admini~1/appdata/local/temp/1/tmp9aietu/extensions/fxdriver@googlecode.com/components/httpd.js:1168:5)
+    at RequestReader.prototype._handleResponse (file:///c:/users/admini~1/appdata/local/temp/1/tmp9aietu/extensions/fxdriver@googlecode.com/components/httpd.js:1616:5)
+    at RequestReader.prototype._processBody (file:///c:/users/admini~1/appdata/local/temp/1/tmp9aietu/extensions/fxdriver@googlecode.com/components/httpd.js:1464:9)
+    at RequestReader.prototype.onInputStreamReady (file:///c:/users/admini~1/appdata/local/temp/1/tmp9aietu/extensions/fxdriver@googlecode.com/components/httpd.js:1333:9)
+
+======================================================================
+ERROR: test_update_issue (update-issue.UpdateIssue)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test-cases/firefox/update-issue.py", line 38, in test_update_issue
+    driver.get(self.base_url + "/login")
+  File "D:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 185, in get
+    self.execute(Command.GET, {'url': url})
+  File "D:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 171, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "D:\Python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 349, in execute
+    return self._request(command_info[0], url, body=data)
+  File "D:\Python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 380, in _request
+    resp = self._conn.getresponse()
+  File "D:\Python27\lib\httplib.py", line 1067, in getresponse
+    response.begin()
+  File "D:\Python27\lib\httplib.py", line 409, in begin
+    version, status, reason = self._read_status()
+  File "D:\Python27\lib\httplib.py", line 373, in _read_status
+    raise BadStatusLine(line)
+BadStatusLine: ''
+
+======================================================================
+FAIL: test_create_issue (create-issue.CreateIssue)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test-cases/firefox/create-issue.py", line 45, in test_create_issue
+    # else: self.fail("time out")
+AssertionError: time out
+
+----------------------------------------------------------------------
+Ran 3 tests in 288.534s
+
+FAILED (failures=1, errors=2)
